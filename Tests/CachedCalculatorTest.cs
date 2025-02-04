@@ -11,13 +11,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "aAddb";
+        
 
         // Act
         var result = calc.Add(a, b);
 
         // Assert
-        Assert.IsTrue(calc._cache.ContainsKey(key));
+        Assert.That(result, Is.EqualTo(5));
     }
     
     [Test]
@@ -27,12 +27,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
+        string key = "2Add3";
 
         // Act
         var result = calc.Add(a, b);
 
         // Assert
-        Assert.That(calc._cache.Count.Equals(1));
+        Assert.IsTrue(calc._cache.ContainsKey(key));
     }
     
     [Test]
@@ -58,7 +59,7 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "aSubtractb";
+        string key = "2Subtract3";
 
         // Act
         var result = calc.Subtract(a, b);
@@ -89,7 +90,7 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "aMultiplyb";
+        string key = "2Multiply3";
 
         // Act
         var result = calc.Multiply(a, b);
@@ -120,7 +121,7 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "aDivideb";
+        string key = "2Divide3";
 
         // Act
         var result = calc.Divide(a, b);
@@ -169,6 +170,21 @@ public class CachedCalculatorTest
     }
     
     [Test]
+    public void Factorial_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        string key = "2Factorial";
+
+        // Act
+        var result = calc.Factorial(a);
+
+        // Assert
+        Assert.IsTrue(calc._cache.ContainsKey(key));
+    }
+    
+    [Test]
     public void IsPrime_One()
     {
         // Arrange
@@ -208,6 +224,21 @@ public class CachedCalculatorTest
         
         // Assert
         Assert.That(result, Is.False);
+    }
+    
+    [Test]
+    public void IsPrime_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        string key = "2IsPrime";
+
+        // Act
+        var result = calc.IsPrime(a);
+
+        // Assert
+        Assert.IsTrue(calc._cache.ContainsKey(key));
     }
     
 }
