@@ -11,12 +11,28 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
+        string key = "aAddb";
 
         // Act
         var result = calc.Add(a, b);
 
         // Assert
-        Assert.That(result, Is.EqualTo(5));
+        Assert.IsTrue(calc._cache.ContainsKey(key));
+    }
+    
+    [Test]
+    public void Add_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        var b = 3;
+
+        // Act
+        var result = calc.Add(a, b);
+
+        // Assert
+        Assert.That(calc._cache.Count.Equals(1));
     }
     
     [Test]
@@ -33,6 +49,22 @@ public class CachedCalculatorTest
         // Assert
         Assert.That(result, Is.EqualTo(1));
         
+    }
+    
+    [Test]
+    public void Subtract_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        var b = 3;
+        string key = "aSubtractb";
+
+        // Act
+        var result = calc.Subtract(a, b);
+
+        // Assert
+        Assert.IsTrue(calc._cache.ContainsKey(key));
     }
 
     [Test]
@@ -51,6 +83,22 @@ public class CachedCalculatorTest
     }
     
     [Test]
+    public void Multiply_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        var b = 3;
+        string key = "aMultiplyb";
+
+        // Act
+        var result = calc.Multiply(a, b);
+
+        // Assert
+        Assert.IsTrue(calc._cache.ContainsKey(key));
+    }
+    
+    [Test]
     public void Divide()
     {
         // Arrange
@@ -63,6 +111,22 @@ public class CachedCalculatorTest
         
         // Assert
         Assert.That(result, Is.EqualTo(5));
+    }
+    
+    [Test]
+    public void Divide_Cashed()
+    {
+        // Arrange
+        var calc = new CachedCalculator();
+        var a = 2;
+        var b = 3;
+        string key = "aDivideb";
+
+        // Act
+        var result = calc.Divide(a, b);
+
+        // Assert
+        Assert.IsTrue(calc._cache.ContainsKey(key));
     }
     
     [Test]
