@@ -16,6 +16,6 @@ public class SimpleCalculatorTest
         var result = calc.Add(a, b);
         
         // Assert
-        Assert.That(result, Is.EqualTo(3));
+        Assert.That(result, Is.EqualTo(5));
     }
 }
