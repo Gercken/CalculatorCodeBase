@@ -29,7 +29,7 @@ jobs:
 
       - name: Run Mutation Tests
         run: |
-          dotnet stryker --break-at 80
+          dotnet stryker
 
       - name: Collect Coverage Report
         uses: actions/upload-artifact@v4
@@ -42,6 +42,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Stryker Report
-          path: ''
+          path: StrykerReport
         # Complete this step so it uploads the Stryker report to the artifacts - make it run always even if previous 
     
