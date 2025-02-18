@@ -24,7 +24,7 @@ jobs:
         run: |
           dotnet sonarscanner begin \
           /k:${{ secrets.SONARQUBE_PKEY }} \
-          /d:sonar.host.url= ${{ vars.SONARQUBE_SERVER }} \
+          /d:sonar.host.url= "http://sonarqube.setgo.dk:9000/" \
           /d:sonar.token=${{ secrets.SONARQUBE_TOKEN }} \
           /d:sonar.coverageReportPaths="coverage-report/SonarQube.xml" \
           /d:sonar.qualitygate.wait=true \
