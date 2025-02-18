@@ -27,14 +27,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "2Add3";
 
         // Act
         var result = calc.Add(a, b);
         var result2 = calc.Add(a, b);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
     
     [Test]
@@ -60,14 +59,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "2Subtract3";
 
         // Act
         var result = calc.Subtract(a, b);
         var result2 = calc.Subtract(a, b);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
 
     [Test]
@@ -92,14 +90,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "2Multiply3";
 
         // Act
         var result = calc.Multiply(a, b);
         var result2 = calc.Multiply(a, b);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
     
     [Test]
@@ -124,14 +121,13 @@ public class CachedCalculatorTest
         var calc = new CachedCalculator();
         var a = 2;
         var b = 3;
-        string key = "2Divide3";
 
         // Act
         var result = calc.Divide(a, b);
         var result2 = calc.Divide(a, b);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
     
     [Test]
@@ -179,13 +175,12 @@ public class CachedCalculatorTest
         // Arrange
         var calc = new CachedCalculator();
         var a = 2;
-        string key = "2Factorial";
 
         // Act
         var result = calc.Factorial(a);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
     
     [Test]
@@ -236,14 +231,13 @@ public class CachedCalculatorTest
         // Arrange
         var calc = new CachedCalculator();
         var a = 2;
-        string key = "2IsPrime";
 
         // Act
         var result = calc.IsPrime(a);
         var result2 = calc.IsPrime(a);
 
         // Assert
-        Assert.IsTrue(calc._cache.Count.Equals(1));
+        Assert.That(calc.Cache.Count, Is.EqualTo(1));
     }
     
 }
