@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj",
-        "packagesPath": "C:\\Users\\AlexG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\obj\\",
+        "projectPath": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj",
+        "packagesPath": "C:\\Users\\ajge1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AlexG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ajge1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

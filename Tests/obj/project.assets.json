@@ -998,19 +998,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AlexG\\.nuget\\packages\\": {}
+    "C:\\Users\\ajge1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\AlexG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Tests\\obj\\",
+      "projectPath": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\ajge1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AlexG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ajge1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1018,14 +1018,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {
-              "projectPath": "C:\\Users\\AlexG\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj"
+            "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj": {
+              "projectPath": "C:\\Users\\ajge1\\RiderProjects\\CalculatorCodeBase\\Calculator\\Calculator.csproj"
             }
           }
         }
@@ -1082,7 +1083,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
