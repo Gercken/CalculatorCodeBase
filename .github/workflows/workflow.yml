@@ -23,9 +23,9 @@ jobs:
       - name: Start Static Code Analysis
         run: |
           dotnet sonarscanner begin \
-          /k:"AJG-Calculator-Code-Base" \
-          /d:sonar.host.url="http://62.164.217.208:9000/" \
-          /d:sonar.token="sqp_aa019f014ce23fbeb597c1393635db783d8ed577" \
+          /k:${{ secrets.SONARQUBE_PKEY }} \
+          /d:sonar.host.url= ${{ vars.SONARQUBE_SERVER }} \
+          /d:sonar.token=${{ secrets.SONARQUBE_TOKEN }} \
           /d:sonar.coverageReportPaths="coverage-report/SonarQube.xml" \
           /d:sonar.qualitygate.wait=true \
           /d:sonar.qualitygate.timeout=300
@@ -48,7 +48,7 @@ jobs:
       - name: Complete Static Code Analysis
         run: |
           dotnet sonarscanner end \
-          /d:sonar.token="sqp_aa019f014ce23fbeb597c1393635db783d8ed577"
+          /d:sonar.token=${{ secrets.SONARQUBE_TOKEN }}
           
           
       - name: Generate report
