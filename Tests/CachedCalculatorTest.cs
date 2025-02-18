@@ -33,7 +33,7 @@ public class CachedCalculatorTest
         var result2 = calc.Add(a, b);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
     
     [Test]
@@ -65,7 +65,7 @@ public class CachedCalculatorTest
         var result2 = calc.Subtract(a, b);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
 
     [Test]
@@ -96,7 +96,7 @@ public class CachedCalculatorTest
         var result2 = calc.Multiply(a, b);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
     
     [Test]
@@ -127,7 +127,7 @@ public class CachedCalculatorTest
         var result2 = calc.Divide(a, b);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
     
     [Test]
@@ -180,7 +180,7 @@ public class CachedCalculatorTest
         var result = calc.Factorial(a);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
     
     [Test]
@@ -237,7 +237,7 @@ public class CachedCalculatorTest
         var result2 = calc.IsPrime(a);
 
         // Assert
-        Assert.That(calc.Cache.Count, Is.EqualTo(1));
+        Assert.That(calc.Cache, Has.Count.EqualTo(1));
     }
     
 }
